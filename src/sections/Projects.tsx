@@ -4,7 +4,6 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
-import grainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -14,9 +13,9 @@ const portfolioProjects = [
     year: "2024",
     title: "Dark Saas Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Boosted user engagement by 60%" },
+      { title: "Achieved a 45% faster load time" },
+      { title: "Increased conversion rates by 30%" },
     ],
     link: "https://dark-saa-s-landing-page-deepesh.vercel.app/",
     image: darkSaasLandingPage,
@@ -38,10 +37,10 @@ const portfolioProjects = [
     year: "2025",
     title: "Layers Saas Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
+      { title: "Enhanced design efficiency by 50%" },
+      { title: "Increased sign-ups by 40%" },
+      { title: "Reduced bounce rate by 35%" },
+    ],    
     link: "https://layers-saas-landing-page.vercel.app/",
     image: aiStartupLandingPage,
   },
@@ -51,7 +50,7 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concept into engaging digital experiences."/>
+        <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concept into engaging digital experiences." />
         <div className="md:mt-20 flex flex-col mt-10 gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card
@@ -60,7 +59,7 @@ export const ProjectsSection = () => {
               style={{
                 top: `calc(64px + ${projectIndex * 40}px`,
               }}
-              >
+            >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400
@@ -73,8 +72,8 @@ export const ProjectsSection = () => {
                   <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                    {project.results.map((result) => (
-                      <li className="flex gap-2 text-sm md:text-base text-white/50">
+                    {project.results.map((result, index) => (
+                      <li key={index} className="flex gap-2 text-sm md:text-base text-white/50">
                         <CheckCircleIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
