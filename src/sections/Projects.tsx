@@ -1,6 +1,10 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import devsyncImage from "@/assets/images/DevSync.png";
+import snapstreamImage from "@/assets/images/SnapStream.png";
+import aceInterviewAIImage from "@/assets/images/AceInterview.png"
+
 import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -43,6 +47,42 @@ const portfolioProjects = [
     ],    
     link: "https://layers-saas-landing-page.vercel.app/",
     image: aiStartupLandingPage,
+  },
+  {
+    company: "Devsync",
+    year: "2025",
+    title: "Remote Interview Platform",
+    results: [
+      { title: "Integrated real-time video calls using Stream" },
+      { title: "Implemented seamless screen sharing" },
+      { title: "Improved candidate evaluation process" },
+    ],
+    link: "https://dev-sync-lake.vercel.app/",
+    image: devsyncImage,
+  },
+  {
+    company: "SnapStream",
+    year: "2025",
+    title: "Screen Recorder Web App",
+    results: [
+      { title: "Built fast screen recording with Next.js" },
+      { title: "Enabled secure video uploads and sharing" },
+      { title: "Optimized performance for low-latency playback" },
+    ],
+    link: "https://snap-stream-tan.vercel.app/",
+    image: snapstreamImage,
+  },
+  {
+    company: "AceInterview-AI",
+    year: "2025",
+    title: "AI Interview Platform",
+    results: [
+      { title: "Integrated Gemini API for dynamic question generation" },
+      { title: "Provided personalized feedback for candidates" },
+      { title: "Improved interview preparation efficiency" },
+    ],
+    link: "https://ace-interview-frontend.vercel.app/",
+    image: aceInterviewAIImage,
   },
 ];
 
