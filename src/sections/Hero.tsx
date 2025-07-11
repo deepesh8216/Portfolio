@@ -65,7 +65,10 @@ export const HeroSection = () => {
         </div>
         <div className='max-w-lg mx-auto'>
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>
-            Hi, I&apos;m Deepesh Crafting Exceptional User Experiences
+            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6ee7b7] via-[#5eead4] to-[#38bdf8] font-semibold">
+              Deepesh
+            </span>
+            {" "} Crafting Exceptional User Experiences
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
             high-performing web applications. Let&apos;s discuss your next project.
