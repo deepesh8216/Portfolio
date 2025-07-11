@@ -1,4 +1,3 @@
-import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -29,7 +28,8 @@ const config: Config = {
       animation: {
         'ping-large': "ping-large 1s ease-in-out infinite",
         'move-left': 'move-left 1s linear infinite',
-        'move-right': 'move-right 1s linear infinite'
+        'move-right': 'move-right 1s linear infinite',
+        'text-shine': 'text-shine 3s linear infinite',
       },
       keyframes: {
         'ping-large' : {
@@ -54,9 +54,18 @@ const config: Config = {
             transform: 'translateX(0%)'
           },
         },
+        'text-shine': {
+          '0%': {
+            backgroundPosition: '0% 50%',
+          },
+          '100%': {
+            backgroundPosition: '100% 50%',
+          },
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;
