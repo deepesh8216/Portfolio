@@ -1,3 +1,4 @@
+'use client'
 import memojiImage from '@/assets/images/avatar.png';
 import Image from "next/image";
 import ArrowDown from '@/assets/icons/arrow-down.svg';
@@ -5,6 +6,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from '@/assets/icons/star.svg';
 import { HeroOrbit } from '@/components/HeroOrbit';
 import SparkleIcon from '@/assets/icons/sparkle.svg'
+import { motion } from 'framer-motion';
 
 export const HeroSection = () => {
   return (
@@ -76,10 +78,26 @@ export const HeroSection = () => {
 
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-          <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
-            <span className='font-semibold'>Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </button>
+          <a
+            href="/Deepesh_Resume_1.pdf"
+            download
+            className="inline-flex items-center gap-2 border border-white/15 px-3 h-10 rounded-xl relative z-10"
+          >
+            <motion.span
+              animate={{
+                backgroundPositionX: "100%",
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                ease: "linear",
+                repeatType: "loop",
+              }}
+              className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] [background-size:200%] text-transparent bg-clip-text font-medium"
+            >
+              Download Resume
+            </motion.span>
+          </a>
         </div>
       </div>
     </div >
