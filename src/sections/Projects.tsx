@@ -56,7 +56,7 @@ const portfolioProjects = [
     results: [
       { title: "Integrated real-time video calls" },
       { title: "Implemented seamless screen sharing" },
-      { title: "Improved candidate evaluation process" },
+      { title: "Refined applicant evaluation" },
     ],
     link: "https://dev-sync-lake.vercel.app/",
     image: devsyncImage,
