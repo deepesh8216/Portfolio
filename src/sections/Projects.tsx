@@ -45,7 +45,7 @@ const portfolioProjects = [
       { title: "Enhanced design efficiency by 50%" },
       { title: "Increased sign-ups by 40%" },
       { title: "Reduced bounce rate by 35%" },
-    ],    
+    ],
     link: "https://layers-saas-landing-page.vercel.app/",
     image: aiStartupLandingPage,
   },
@@ -54,7 +54,7 @@ const portfolioProjects = [
     year: "2025",
     title: "Remote Interview Platform",
     results: [
-      { title: "Integrated real-time video calls using Stream" },
+      { title: "Integrated real-time video calls" },
       { title: "Implemented seamless screen sharing" },
       { title: "Improved candidate evaluation process" },
     ],
@@ -64,11 +64,11 @@ const portfolioProjects = [
   {
     company: "SnapStream",
     year: "2025",
-    title: "Screen Recorder Web App",
+    title: "Screen Recorder web App",
     results: [
       { title: "Built fast screen recording with Next.js" },
       { title: "Enabled secure video uploads and sharing" },
-      { title: "Optimized performance for low-latency playback" },
+      { title: "Optimized performance for playback" },
     ],
     link: "https://snap-stream-tan.vercel.app/",
     image: snapstreamImage,
