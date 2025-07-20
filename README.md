@@ -4,9 +4,8 @@ A modern, responsive, and animated portfolio website built with [Next.js](https:
 
 ## ✨ Demo
 
-Live Site 👉 [yourdomain.com](https://yourdomain.com)
+Live Site 👉 [yourdomain.com](https://deepesh-mccavern.vercel.app/)
 
-![Portfolio Preview](./public/preview.png)
 
 ---
 
