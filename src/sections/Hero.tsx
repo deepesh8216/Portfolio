@@ -7,7 +7,6 @@ import StarIcon from '@/assets/icons/star.svg';
 import { HeroOrbit } from '@/components/HeroOrbit';
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import { motion } from 'framer-motion';
-import { CoolMode } from "@/components/cool-mode";
 
 export const HeroSection = () => {
   return (
@@ -79,7 +78,6 @@ export const HeroSection = () => {
 
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-          <CoolMode>
           <a
             href="/Deepesh_Resume_1.pdf"
             download
@@ -103,7 +101,6 @@ export const HeroSection = () => {
             <ArrowDown className="size-4" />
             
           </a>
-          </CoolMode>
         </div>
       </div>
     </div >

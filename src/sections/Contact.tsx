@@ -1,7 +1,6 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import ButtonTextChange from "@/components/ButtonText-change";
-import { CoolMode } from "@/components/cool-mode";
 
 export const ContactSection = () => {
   return (
@@ -24,7 +23,6 @@ export const ContactSection = () => {
               </p>
             </div>
             <div>
-              <CoolMode>
               <ButtonTextChange>
               <a
                 href="mailto:kumardeepesh542@gmail.com?subject=Let's Work Together&body=Hi Deepesh,%0D%0A%0D%0AI'd love to discuss a project with you.%0D%0A%0D%0AThanks!"
@@ -34,7 +32,6 @@ export const ContactSection = () => {
                 <ArrowUpRightIcon className="size-4" />
               </a>
               </ButtonTextChange>
-              </CoolMode>
             </div>
           </div>
         </div>
